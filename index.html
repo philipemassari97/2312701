@@ -4,16 +4,25 @@
 <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
   <body style='margin : 0px; overflow: hidden;'>
-    <a-scene stats embedded arjs='trackingMethod: best;'>
-      <!-- <a-marker preset="hiro">
-      
-	  </a-marker> -->
+
+      <a-scene embedded arjs='sourceType: webcam;'> 
+          <!-- handle marker with your own pattern --> 
+          <a-marker preset='custom' url='n2.patt'> 
+            <!-- <a-image src="myimg.jpg" position="0 0 0" rotation="90 180 0 ">  -->
+                <a-box position='0 1 0' material='color: blue;'>
+                  </a-box>
+            </a-marker> <!-- add a simple camera --> 
+            <a-entity camera></a-entity> 
+          </a-scene>
+
+    <!-- <a-scene stats embedded arjs='trackingMethod: best;'>
 	  
 	  <a-marker type='pattern' url='pattern-place_icon.patt'>
 		<a-box position='0 1 0' material='color: blue;'>
 		</a-box>
 	</a-marker>
       <a-entity camera></a-entity>
-    </a-scene>
+    </a-scene> -->
   </body>
 </html>
+
