@@ -7,11 +7,12 @@
 
       <a-scene embedded arjs='sourceType: webcam;'> 
           <!-- handle marker with your own pattern --> 
-          <a-marker preset='custom' url='n2.patt'> 
-            <!-- <a-image src="myimg.jpg" position="0 0 0" rotation="90 180 0 ">  -->
-                <a-box position='0 1 0' material='color: blue;'>
-                  </a-box>
-            </a-marker> <!-- add a simple camera --> 
+            <a-marker-camera preset='custom' type='pattern' url='http://www.massarisoftware.com.br/n2.patt'>
+              <a-box position='0 1 0' material='color: blue;'>
+                </a-box>
+            
+            </a-marker-camera>
+
             <a-entity camera></a-entity> 
           </a-scene>
 
