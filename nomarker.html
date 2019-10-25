@@ -11,24 +11,19 @@
 
 <a-assets>
     <a-asset-item id="bear" src="https://philipemassari97.github.io/arjs/polar.gltf"></a-asset-item>
-    <video id="penguin-sledding" autoplay loop="true" src="https://www.youtube.com/watch?v=OHArKzUQ9qM"></video>
 </a-assets>
 
   <a-scene embedded arjs='sourceType: webcam;'>
     <!-- handle marker with your own pattern -->
     <a-marker type='pattern' url='pattern-rab-aulas-1.patt'>
 
-
-      <a-video src="#penguin-sledding" width="16" height="9" position="0 0 -20"></a-video>
-        <!-- funciona <a-entity
+        <a-entity
         animation-mixer
         gltf-model="#bear"
         scale="0.5 0.5 0.5"
         >
     </a-entity>
-
-
-        -->
+       
       <!-- <a-box position='0 0.5 0' material='color: red;'></a-box>  scale="0.9 0.9 0.9" -->
        <!-- <a-entity gltf-model="#bear" rotation= "180 0 0">
       </a-entity>  -->
