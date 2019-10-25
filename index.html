@@ -10,16 +10,14 @@
 <body style='margin : 0px; overflow: hidden;'>
 
 <a-assets>
-    <a-asset-item id="bear" src="https://philipemassari97.github.io/arjs/polar.gltf"></a-asset-item>
-    <video id="penguin-sledding" autoplay loop="true" src="https://www.youtube.com/watch?v=OHArKzUQ9qM"></video>
+    <!-- <a-asset-item id="bear" src="https://philipemassari97.github.io/arjs/polar.gltf"></a-asset-item> -->
+    <video id="penguin-sledding" autoplay loop="true" src="https://vimeo.com/42029472"></video>
 </a-assets>
 
   <a-scene embedded arjs='sourceType: webcam;'>
     <!-- handle marker with your own pattern -->
     <a-marker type='pattern' url='pattern-rab-aulas-1.patt'>
-
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/XVT7gXBncw8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <!-- <a-video src="#penguin-sledding" width="16" height="9" position="0 0 -20"></a-video> -->
+      <a-video src="#penguin-sledding" width="16" height="9" position="0 0 -20"></a-video>
         <!-- funciona <a-entity
         animation-mixer
         gltf-model="#bear"
