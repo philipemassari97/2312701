@@ -1,51 +1,35 @@
 
+<!-- <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script> -->
+<!-- <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script> -->
 
-<script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script> 
-<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script> 
-<script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v4.1.2/dist/aframe-extras.min.js"></script>
- <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script> 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script> AFRAME.registerComponent('vidhandler', { 
-     init: function () { // Set up initial state and variables.
-      this.toggle = false; this.vid = document.querySelector("#vid");
-       this.vid.pause();
-      }, tick:function(){
-         if(this.el.object3D.visible == true){ 
-           if(!this.toggle){ this.toggle = true; this.vid.play(); 
-           } }else{ this.toggle = false; this.vid.pause(); } } }); function refrespage() { location.reload(); } </script> 
-
-<!--  funcionais <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+<script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
 <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
-<script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script> -->
+<script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 
 
 <body style='margin : 0px; overflow: hidden;'>
 
 <a-assets>
     <!-- <a-asset-item id="bear" src="https://philipemassari97.github.io/arjs/polar.gltf"></a-asset-item> -->
-    <!-- <video id="penguin-sledding" autoplay loop="true" src="https://r5---sn-5uaeznkz.googlevideo.com/videoplayback?expire=1572057405&ei=3VyzXYyjEY7fkAT_26L4DA&ip=167.100.100.97&id=o-AIFp0DIFvYrzdsXM13NCKGwkxjzd7aLD5LOCsh9oV_Er&itag=43&source=youtube&requiressl=yes&mm=31%2C26&mn=sn-5uaeznkz%2Csn-q4fl6nsl&ms=au%2Conr&mv=m&mvi=4&pl=22&initcwndbps=1167500&mime=video%2Fwebm&gir=yes&clen=25583206&ratebypass=yes&dur=0.000&lmt=1517281736135579&mt=1572035646&fvip=5&fexp=23842630&c=WEB&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cmime%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&lsparams=mm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AHylml4wRQIgZInPtpIh-hmJpUxwGnHsTdZ7e0X53B8GGJW9VtzeWDUCIQDuMuoo2jtPcP7Fuk7PlTiR1-4rJZa1cGvRsY9Flo19hA%3D%3D&sig=ALgxI2wwRgIhAM6q4Ifb5Ej0VAel-WQFWf3te9gPGG-7pltzspKT-1wJAiEA_jJH6ktoLBsL190OR_PTHbp6m85CkFhailkDFLAPNwE%3D&video_id=3tjLs4BwhcE&title=Saint+Seiya+%C3%94mega+%CE%A9+-+Pegasus+Fantasy+%28Larissa+Tassi+%26+Rod+Rossi%29"></video> -->
-<video preload="auto"  id="vid"loop="true" crossorigin  webkit-playsinline playsinline controls>
-           <source  type="video/webm"  src="https://r5---sn-5uaeznkz.googlevideo.com/videoplayback?expire=1572057405&ei=3VyzXYyjEY7fkAT_26L4DA&ip=167.100.100.97&id=o-AIFp0DIFvYrzdsXM13NCKGwkxjzd7aLD5LOCsh9oV_Er&itag=43&source=youtube&requiressl=yes&mm=31%2C26&mn=sn-5uaeznkz%2Csn-q4fl6nsl&ms=au%2Conr&mv=m&mvi=4&pl=22&initcwndbps=1167500&mime=video%2Fwebm&gir=yes&clen=25583206&ratebypass=yes&dur=0.000&lmt=1517281736135579&mt=1572035646&fvip=5&fexp=23842630&c=WEB&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cmime%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&lsparams=mm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AHylml4wRQIgZInPtpIh-hmJpUxwGnHsTdZ7e0X53B8GGJW9VtzeWDUCIQDuMuoo2jtPcP7Fuk7PlTiR1-4rJZa1cGvRsY9Flo19hA%3D%3D&sig=ALgxI2wwRgIhAM6q4Ifb5Ej0VAel-WQFWf3te9gPGG-7pltzspKT-1wJAiEA_jJH6ktoLBsL190OR_PTHbp6m85CkFhailkDFLAPNwE%3D&video_id=3tjLs4BwhcE&title=Saint+Seiya+%C3%94mega+%CE%A9+-+Pegasus+Fantasy+%28Larissa+Tassi+%26+Rod+Rossi%29">
-           <h3>Error : Your browser does not support.</h3>
-          <!-- FOR NOTMAL VIDEO YOU CAN USE MP4 or WEBM BUT FOR ALPHA VIDEO YOU NEED TO USE .WEBM FORMAT-->
-        </video>
-
+    <video id="penguin-sledding" autoplay loop="true" muted="true" src="https://archive.org/download/SampleVideo1280x7205mb/SampleVideo_1280x720_5mb.mp4"></video>
+   
   </a-assets>
 
   <a-scene embedded arjs='sourceType: webcam;'>
     <!-- handle marker with your own pattern -->
     <a-marker type='pattern' url='pattern-rab-aulas-1.patt'>
-      <a-video src="#vid" width="16" height="9" position="0 0 -20"></a-video>
-        <!-- funciona <a-entity
+
+      <!-- <a-box position='0 0.5 0' material='color: yellow; opacity: 0.5;'></a-box> -->
+	  <a-video src="#penguin-sledding" position="0 0.5 0" rotation="270 0 0" play="true"></a-video>
+        <!-- <a-video src="#vid" width="1.78" height="1" rotation="270 0 0" play="true"></a-video> -->
+<!-- 
+        <a-entity
         animation-mixer
         gltf-model="#bear"
         scale="0.5 0.5 0.5"
         >
-    </a-entity>
-
-
-        -->
+    </a-entity> -->
+       
       <!-- <a-box position='0 0.5 0' material='color: red;'></a-box>  scale="0.9 0.9 0.9" -->
        <!-- <a-entity gltf-model="#bear" rotation= "180 0 0">
       </a-entity>  -->
@@ -66,6 +50,13 @@
     <!-- add a simple camera -->
     <a-entity camera></a-entity>
   </a-scene>
+
+  <script>
+      window.addEventListener('click', function () {
+      var v = document.querySelector('#penguin-sledding');
+      v.play();
+      });
+    </script>
 </body>
 
 
