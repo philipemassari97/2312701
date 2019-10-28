@@ -21,6 +21,9 @@
     <!-- handle marker with your own pattern -->
     <a-marker type='pattern' url='pattern-rab-aulas-1.patt'>
       <a-image id="ibagem" width="4" height="4" src="#transpImage"></a-image>
+      <div id="content">
+        </div>
+        
     </a-marker>
 
     <!-- handle marker with hiro preset -->
@@ -38,9 +41,9 @@
   </a-scene>
 
   
-
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
           &ensp;&ensp;<button onclick="setModel(1);">Suco</button> 
-          &ensp;&ensp;<button onclick="setModel(2);">Prato</button> 
+          <button onclick="setModel(2);">Prato</button> 
      
 
   <script>
@@ -50,7 +53,15 @@
         document.querySelector('#transpImage').setAttribute('src', 'copo1.png');
         alert('iniciando');
       } else if(model == 2){
-        document.querySelector('#transpImage').setAttribute('src', 'prato1.png');
+        // document.querySelector('#transpImage').setAttribute('src', 'prato1.png');
+
+        
+                  document.querySelector('#content').insertAdjacentHTML(
+                    'afterbegin',
+                    ' <a-image id="ibagem" width="4" height="4" src="#copoImage"></a-image>'      
+                  );
+
+
       }
 
     }
