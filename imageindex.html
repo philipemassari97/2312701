@@ -10,8 +10,6 @@
 <body style='margin : 0px; overflow: hidden;'>
 
 <a-assets>
-    <!-- <a-asset-item id="bear" src="https://philipemassari97.github.io/arjs/polar.gltf"></a-asset-item> -->
-    <!-- <video id="penguin-sledding" autoplay loop="true" crossorigin="anonymous" muted="true" src="https://philipemassari97.github.io/2312701/video/ar.mp4"></video> -->
     <img id="transpImage" src="prato1.png">
     <img id="copoImage" src="copo1.png">
   </a-assets>
@@ -19,31 +17,12 @@
   <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
     <!-- handle marker with your own pattern -->
     <a-marker type='pattern' url='pattern-rab-aulas-1.patt'>
-      <a-image width="4" height="4" src="#transpImage"></a-image>
-      <!-- <a-box position='0 0.5 0' material='color: yellow; opacity: 0.5;'></a-box> -->
-	  <!-- <a-video play-on-scan src="#penguin-sledding" position="0 0.5 0" rotation="270 0 0" play="true"></a-video> -->
-        <!-- <a-video src="#vid" width="1.78" height="1" rotation="270 0 0" play="true"></a-video> -->
-    <!-- objeto 3d funcional
-        <a-entity
-        animation-mixer
-        gltf-model="#bear"
-        scale="0.5 0.5 0.5"
-        >
-    </a-entity> -->
-       
-      <!-- <a-box position='0 0.5 0' src="#texture"></a-box> -->
-      <!-- <a-text value="Isso é realidade aumentada Web"></a-text> -->
+      <a-image width="4" height="4" src="#transpImage" style="display: none;"></a-image>
     </a-marker>
 
     <!-- handle marker with hiro preset -->
     <a-marker preset='hiro'>
-        <a-image width="3" height="4" src="#copoImage"></a-image>
-        <!-- <a-entity
-        animation-mixer
-        gltf-model="#bear"
-        scale="0.5 0.5 0.5"
-        > -->
-      <!-- <a-box position='0 0.5 0' material='color: red;'></a-box> -->
+        <a-image width="3" height="4" src="#copoImage" style="display: none;"></a-image>
     </a-marker>
 
     <!-- handle barcode marker -->
@@ -53,6 +32,8 @@
 
     <!-- add a simple camera -->
     <a-entity camera></a-entity>
+    <button onclick="document.getElementById('transpImage').style.display='none';">Ver Comida</button>
+    <button onclick="document.getElementById('copoImage').style.display='none';">Ver Suco</button>
   </a-scene>
 
   <script>
