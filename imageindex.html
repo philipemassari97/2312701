@@ -16,12 +16,9 @@
 
 
   &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<button onclick="document.getElementById('ibagem').src='#transpImage';">Comida</button>
-      &ensp;&ensp;<button onclick="alert('testes');">Sukyo</button>
+      &ensp;&ensp;<button onclick="document.getElementById('ibagem').src='#copoImage'; alert('Changed!');">Sukyo de Garuda</button>
 
   <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
-      &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<button onclick="document.getElementById('ibagem').src='#transpImage';">Comida</button>
-      &ensp;&ensp;<button onclick="alert('teste');">Suco</button>
-
     <!-- handle marker with your own pattern -->
     <a-marker type='pattern' url='pattern-rab-aulas-1.patt'>
       <a-image id="ibagem" width="4" height="4" src=""></a-image>
@@ -40,8 +37,7 @@
     <!-- add a simple camera -->
     <a-entity camera></a-entity> 
   </a-scene>
-  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<button onclick="document.getElementById('ibagem').src='#transpImage';">Comida</button>
-  &ensp;&ensp;<button onclick="alert('testes');">Sukya</button>
+
 
   <script>
       window.addEventListener('click', function () {
