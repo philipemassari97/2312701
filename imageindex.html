@@ -41,14 +41,12 @@
 
   <script>
 
-
-      document.getElementById('ibagem').attributes.src = "#copoImage";
-      document.getElementById('ibagem').src = "#copoImage";
-
+            document.querySelector('#transpImage').setAttribute('src', 'copo1.png');
+            alert('iniciando');
       window.addEventListener('click', function () {
       var v = document.querySelector('#transpImage');
       v.play();
-      v.src="#copoImage";
+      // v.src="#copoImage";
       });
       // alert('teste');
     </script>
