@@ -16,12 +16,12 @@
 <br/>
 
   &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<button onclick="document.getElementById('ibagem').src='#transpImage';">Comida</button>
-      &ensp;&ensp;<button onclick="document.getElementById('ibagem').style.visibility='hidden'; alert('Changed2!');">Sukya Hidden</button>
+      &ensp;&ensp;<button onclick="document.getElementById('transpImage').src='copo1.png'; alert('Changed3!');">Sukya Hidden3</button>
 
   <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
     <!-- handle marker with your own pattern -->
     <a-marker type='pattern' url='pattern-rab-aulas-1.patt'>
-      <a-image id="ibagem" width="4" height="4" src=""></a-image>
+      <a-image id="ibagem" width="4" height="4" src="#transpImage"></a-image>
     </a-marker>
 
     <!-- handle marker with hiro preset -->
