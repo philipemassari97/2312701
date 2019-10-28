@@ -15,8 +15,10 @@
   </a-assets>
 <br/>
 
-  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<button onclick="document.getElementById('ibagem').src='#transpImage';">Comida</button>
-      &ensp;&ensp;<button onclick="document.getElementById('transpImage').src='copo1.png'; alert('Changed3!');">Sukya Hidden3</button>
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+      &ensp;&ensp;<button onclick="setModel(1);">Suco</button> <br/>
+      &ensp;&ensp;<button onclick="setModel(2);">Prato</button> <br/>
+
 
   <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
     <!-- handle marker with your own pattern -->
@@ -41,8 +43,17 @@
 
   <script>
 
-            document.querySelector('#transpImage').setAttribute('src', 'copo1.png');
-            alert('iniciando');
+    function setModel(model){
+      if(model == 1){
+        document.querySelector('#transpImage').setAttribute('src', 'copo1.png');
+        alert('iniciando');
+      } else if(model == 2){
+        document.querySelector('#transpImage').setAttribute('src', 'prato1.png');
+      }
+
+    }
+
+
       window.addEventListener('click', function () {
       var v = document.querySelector('#transpImage');
       v.play();
