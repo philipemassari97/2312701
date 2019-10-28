@@ -17,7 +17,7 @@
   <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
     <!-- handle marker with your own pattern -->
     <a-marker type='pattern' url='pattern-rab-aulas-1.patt'>
-      <a-image width="4" height="4" src="#transpImage" style="display: none;"></a-image>
+      <a-image id="ibagem" width="4" height="4" src=""></a-image>
     </a-marker>
 
     <!-- handle marker with hiro preset -->
@@ -31,11 +31,12 @@
     </a-marker>
 
     <!-- add a simple camera -->
-    <a-entity camera></a-entity> <center>
-    <button onclick="document.getElementById('transpImage').style.display='block';">Ver Comida</button>
-    <button onclick="document.getElementById('copoImage').style.display='block';">Ver Suco</button>
-  </center>
+    <a-entity camera></a-entity> 
+
+    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<button onclick="document.getElementById('ibagem').src='#transpImage';">Comida</button>
+    &ensp;&ensp;<button onclick="document.getElementById('ibagem').src='#copoImage';">Suco</button>
   </a-scene>
+  
 
   <script>
       window.addEventListener('click', function () {
