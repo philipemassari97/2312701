@@ -13,10 +13,16 @@
 <br/>
   <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
     <!-- handle marker with your own pattern -->
-    <a-marker type='pattern' url='pattern-rab-aulas-1.patt'>
+    <!-- <a-marker type='pattern' url='pattern-rab-aulas-1.patt'> -->
+        <a-marker type='pattern' url='qrcode.patt'>
       <a-image id="ibagem" width="4" height="4" src="#transpImage"></a-image>
     </a-marker>
     <!-- handle marker with hiro preset -->
+
+  
+
+
+
     <a-marker preset='hiro'>
         <a-image width="3" height="4" src="#copoImage" style="display: none;"></a-image>
     </a-marker>
