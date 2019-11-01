@@ -24,8 +24,12 @@
 
 
     <a-marker preset='hiro'>
-        <a-image width="3" height="4" src="#copoImage" style="display: none;"></a-image>
+        <!-- <a-image width="3" height="4" src="#copoImage" style="display: none;"></a-image> -->
+        <a-entity rotation="-90 0 0" geometry="primitive:plane" material="shader:gif;src:url(nyancat.gif);" gif="" transparent="true"></a-entity>
     </a-marker>
+
+
+    
     <!-- handle barcode marker -->
     <a-marker type='barcode' value='5'>
       <a-box position='0 0.5 0' material='color: blue;'></a-box>
