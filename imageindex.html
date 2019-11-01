@@ -27,25 +27,7 @@
     <a-marker preset='hiro'>
         <!-- <a-image width="3" height="4" src="#copoImage" style="display: none;"></a-image> -->
         <!-- <a-entity rotation="-90 0 0" geometry="primitive:plane" material="shader:gif;src:url(banana.gif);" gif="" transparent="true"></a-entity> -->
-
-        <a-entity  position="0 0 0" 
-    rotation="90 0 0" geometry="primitive: circle; radius: 4"
-      material="color: transparent">
-
-       <a-animation attribute="rotation"
-           dur="10000"
-           easing="linear"
-           to="90 0 360"
-           repeat="indefinite"></a-animation>
-
-       <a-entity rotation="270 -180 180" 
-       position="0 3 -0.5" 
-       geometry="primitive:plane;" 
-       material="shader:gif;side:double;src:url(banana.gif);transparent:true;opacity:1;">
-        </a-entity>
-  </a-entity>
-
-
+        <a-box position="0 0 0" width="1" height="1" depth="0" material="shader:gif;src:url(banana.gif);" transparent="true" gif="" rotation="" scale="" visible="" geometry=""></a-box>
     </a-marker>
 
 
