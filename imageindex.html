@@ -12,6 +12,7 @@
 <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
 <a-assets>
+  <a-asset-item id="bear" src="https://philipemassari97.github.io/2312701/polar.gltf"></a-asset-item>
     <img id="transpImage" src="prato1.png">
     <img id="copoImage" src="copo1.png">
   </a-assets>
@@ -27,7 +28,12 @@
     <a-marker preset='hiro'>
         <!-- <a-image width="3" height="4" src="#copoImage" style="display: none;"></a-image> -->
         <!-- <a-entity rotation="-90 0 0" geometry="primitive:plane" material="shader:gif;src:url(banana.gif);" gif="" transparent="true"></a-entity> -->
-        <a-box position="0 0 0" width="1" height="1" depth="0" material="shader:gif;src:url(tenor.gif);" transparent="true" gif="" rotation="" scale="" visible="" geometry=""></a-box>
+        <!-- <a-box position="0 0 0" width="1" height="1" depth="0" material="shader:gif;src:url(tenor.gif);" transparent="true" gif="" rotation="" scale="" visible="" geometry=""></a-box> -->
+        <a-entity
+        animation-mixer
+        gltf-model="#bear"
+        scale="0.5 0.5 0.5"
+        >
     </a-marker>
 
 
