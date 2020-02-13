@@ -14,7 +14,6 @@
 <a-assets>
     <img id="transpImage" src="prato1.png">
     <img id="copoImage" src="copo1.png">
-    <a-asset-item id="bear" src="https://philipemassari97.github.io/2312701/polar.gltf"></a-asset-item>
   </a-assets>
 <br/>
   <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
@@ -24,24 +23,6 @@
       <a-image id="ibagem" width="4" height="4" src="#transpImage"></a-image>
     </a-marker>
     <!-- handle marker with hiro preset -->
-
-
-    <a-marker type='pattern' url='pattern-rab-aulas-1.patt'>
-
-      <!-- <a-box position='0 0.5 0' material='color: yellow; opacity: 0.5;'></a-box> -->
-	  <!-- <a-video play-on-scan src="#penguin-sledding" position="0 0.5 0" rotation="270 0 0" play="true"></a-video> -->
-        <!-- <a-video src="#vid" width="1.78" height="1" rotation="270 0 0" play="true"></a-video> -->
- 
-        <a-entity
-        animation-mixer
-        gltf-model="#bear"
-        scale="0.5 0.5 0.5"
-        >
-    </a-entity>
-       
-      <!-- <a-box position='0 0.5 0' src="#texture"></a-box> -->
-      <!-- <a-text value="Isso é realidade aumentada Web"></a-text> -->
-    </a-marker>
 
     <a-marker preset='hiro'>
         <!-- <a-image width="3" height="4" src="#copoImage" style="display: none;"></a-image> -->
